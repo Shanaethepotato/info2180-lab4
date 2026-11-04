@@ -79,7 +79,7 @@ foreach ($superheroes as $superhero) {
     if (strcasecmp($superhero['alias'], $query) === 0 ||
         strcasecmp($superhero['name'], $query) === 0) {
         echo '<h3>' . htmlspecialchars($superhero['alias']) . '</h3>';
-        echo '<h4>' . htmlspecialchars($superhero['name']) . '</h4>';
+        echo '<h4>A.K.A. ' . htmlspecialchars($superhero['name']) . '</h4>';
         echo '<p>' . htmlspecialchars($superhero['biography']) . '</p>';
         return;
     }
